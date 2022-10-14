@@ -59,3 +59,18 @@ Credits:
 		Misc. Sass functions (@HugoGiraudel)
 		Respond.js (j.mp/respondjs)
 		Skel (skel.io)
+
+
+
+### 主题修改分析
+1. _includes 定义一些模版，比如通用的header，footer,在_layouts里面的
+default.html 被引用，将模版注入生成html
+2. _layout 存放layout布局信息，在具体页面的配置layout:上引用，然后页面下面的详细内容
+会被传为content传入添加道layout中{/{content}/}里面
+3. assets 存放css,js,image等
+
+
+
+### 本地启动
+- bundle exec jekyll serve
+- visit : http://localhost:4000
