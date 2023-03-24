@@ -64,13 +64,24 @@ Credits:
 
 ### 主题修改分析
 1. _includes 定义一些模版，比如通用的header，footer,在_layouts里面的
-default.html 被引用，将模版注入生成html
-2. _layout 存放layout布局信息，在具体页面的配置layout:上引用，然后页面下面的详细内容
+default.html 被引用，将模版注入生成html。被模板包含的HTML片段，可在_config.yml中修改位置
+2. _layout 网页排版模板，存放layout布局信息，在具体页面的配置layout:上引用，然后页面下面的详细内容
 会被传为content传入添加道layout中{/{content}/}里面
-3. assets 存放css,js,image等
+3. assets 存放css,js,image等，辅助资源 css布局 js脚本 图片等
+4. _posts 博客内容
+5. _pages 其他需要生成的网页，如About页
+6. _data 动态数据
+7. _sites 最终生成的静态网页
+8. _config.yml 网站的一些配置信息
+9. index.html 网站的入口
 
 
 
 ### 本地启动
 - bundle exec jekyll serve
 - visit : http://localhost:4000
+
+### Refer
+- Liquid Api : https://huang-qing.github.io/github/2017/10/19/GitHub-Jekyll-Liquid-API/
+- Jekyll ：https://www.jianshu.com/p/9f71e260925d
+- Creating and Hosting a Personal Site on GitHub ： https://jmcglone.com/guides/github-pages/
